@@ -32,6 +32,8 @@
                     <li><a href="company.html">会社概要</a></li>
                     <li class="point"><a href="contact.html">お問い合わせ</a></li>
                 </ul>
+                <img src="./image/head.jpg" class="image_area">
+
             </nav>
         </aside>
 
@@ -40,23 +42,52 @@
                 <table class="contact">
                     <tr>
                         <th>お名前</th>
-                        <td><input class="textbox" type="text" name="name"></td>
+                        <td><input class="textbox" placeholder="永田拓也" type="text" name="name"></td>
                     </tr>
                     <tr>
                         <th>メールアドレス</th>
                         <td><input  class="textbox" type="text" name="mail"></td>
                     </tr>
-                    <tr>
+                    <tr class="gender">
                         <th>性別</th>
                         <td>
                             <input type="radio" name="gender" value="male">男
                             <input type="radio" name="gender" value="female">女
+                            <input type="radio" name="gender" value="female">どちらでもない
+                            <input type="radio" name="gender" value="female">両方
+
                         </td>
+                    </tr>
+                    <tr class="ryuuha">
+                        <th>極めている流派</th>
+                        <td>
+                            <input type="radio" name="ryuuha" value="male">界王拳
+                            <input type="radio" name="ryuuha" value="male">北斗神拳
+                            <input type="radio" name="ryuuha" value="female">南斗聖拳
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>出身地</th>
+                        <td><select class="textbox" type="text" name="prefecture">
+                            <option>東京都</option>
+                            <option>界王星</option>
+                            <option>修羅の国</option>
+                        </select></td>
+                    </tr>
+                    
+                    <tr>
+                        <th>居住地</th>
+                        <td><input  class="textbox" type="text" name="mail"></td>
+                    </tr>
+                    <tr>
+                        <th>趣味</th>
+                        <td><input  class="textbox" type="text" name="mail"></td>
                     </tr>
                     <tr>
                         <th>お問い合わせ内容</th>
                         <td>
-                            <textarea class="textbox" name="kanso" ></textarea>
+                            <textarea class="textbox" placeholder="筋肉の話をしましょう" name="kanso" ></textarea>
                         </td>
                     </tr>
                 </table>
@@ -64,13 +95,14 @@
                 <div class="submit-button">
                     <input class="submit" type="submit" value="送 信">
                 </div>
+                <img src="./image/草.jpg" class="image_background">
             </form>
             
         </article>
-    
     </div>
     <footer class="footer">
-        <p>Copyright © 2018 DIVE INC All RIGHTS RESERVED.</p>
+        <p>Copyright © 2018 DIVE INC All RIGHTS RESERVED.</p><br>
+        <p>修羅の国へはこちら</p>
     </footer>
     </div>
   </body>
