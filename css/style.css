@@ -157,3 +157,9 @@ html {
     width: 100%;
     display: inline;
   }
+
+  .footer p a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
