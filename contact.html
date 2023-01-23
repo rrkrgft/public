@@ -46,7 +46,7 @@
                     </tr>
                     <tr>
                         <th>メールアドレス</th>
-                        <td><input  class="textbox" type="text" placeholder="kinnniku-mukimuki@mail.com" name="mail"></td>
+                        <td><input  class="textbox mail" type="text" placeholder="kinnniku-mukimuki@mail.com" name="mail"></td>
                     </tr>
                     <tr class="gender">
                         <th>性別</th>
@@ -93,7 +93,8 @@
                 </table>
 
                 <div class="submit-button">
-                    <input class="submit" type="submit" value="おっす！">
+                    <button class="submit" type="button" value="おっす！"></button>
+                    <audio src="./audio/submit-button.mp3" id="play-button"></audio>
                 </div>
                 <img src="./image/neta1.png" class="image_background"> 
             </form>
@@ -104,6 +105,18 @@
         <p><a href="https://www.youtube.com/watch?v=XgJuHJJY_os">修羅の国へはこちら</a></p>
         
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $('th').on('click', function() {
+            $(this).css('color', 'blue');
+        });
+        $('td').on('click',function(){
+            $(this).css('background-color', 'yellowgreen');
+        });
+        $('button').click(function(){
+            $("#play-button").get(0).play();
+        });
+    </script>
     </div>
   </body>
 </html>
